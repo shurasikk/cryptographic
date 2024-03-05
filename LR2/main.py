@@ -40,23 +40,29 @@ class ModularExponentiation:
     def __init__(self, modulus):
         self.modulus = modulus
 
-    def _modular_multiply(self, a, b):
+    def modular_multiply(self, a, b):
         return ( (a % self.modulus) * (b % self.modulus) ) % self.modulus
 
-    def _modular_add(self, a, b):
+    def modular_add(self, a, b):
         return ( (a % self.modulus) + (b % self.modulus) ) % self.modulus
 
 
     def ost(self, n):
         k = fi(self.modulus)
-        return n%k
+        return n % k
 
     def positive_exponentiation(self, number, exp):
-        return (number**self.ost(exp)) % self.modulus
+        if evkl(number, exp)[0] == 1:
+            return (number**self.ost(exp)) % self.modulus
 
     def negative_exponentiation(self, number, exp):
         return self.positive_exponentiation(evkl(number, self.modulus)[1], abs(exp))
 
+    def exponential(self, number, exp):
+        if exp>0:
+            return self.positive_exponentiation(number, exp)
+        else:
+            return self.negative_exponentiation(number, exp)
 
 
 # Пример использования
@@ -65,10 +71,10 @@ mod_exp = ModularExponentiation(10)  # Заданный модуль
 # Вычисление положительной степени
 print("7**47 \u2261 " + str(mod_exp.positive_exponentiation(7,43)) + " mod " + str(mod_exp.modulus))
 
-mod_exp2 = ModularExponentiation(7)
+mod_exp2 = ModularExponentiation(3)
 
-print("3**28 \u2261 " + str(mod_exp2.positive_exponentiation(3,28)) + " mod " + str(mod_exp2.modulus))
-print(ModularExponentiation(78).negative_exponentiation(17, -2))
+print("2**5 \u2261 " + str(mod_exp2.positive_exponentiation(2, 5)) + " mod " + str(mod_exp2.modulus))
+
 
 # надо возводить в степень как в тетрадке
 # находить обратный элемент методом сравнения
