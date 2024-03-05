@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84e872f4-96bf-4af8-90f5-391e27a4fad6" name="Changes" comment="" />
+    <list default="true" id="8f45bedc-82c0-4854-8b52-a38b0439b1c7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +13,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2ccV3pqgr9WCGo211NC4psJK1Ii" />
+  <component name="ProjectId" id="2ctzSu2yiZYcxZhmK6YZK1VdoJy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,7 +28,7 @@
 }</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="LR1" />
+      <module name="LR2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -52,11 +52,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="84e872f4-96bf-4af8-90f5-391e27a4fad6" name="Changes" comment="" />
-      <created>1708410659778</created>
+      <changelist id="8f45bedc-82c0-4854-8b52-a38b0439b1c7" name="Changes" comment="" />
+      <created>1708945666271</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708410659778</updated>
+      <updated>1708945666271</updated>
     </task>
     <servers />
   </component>
@@ -70,5 +70,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
