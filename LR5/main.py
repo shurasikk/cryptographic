@@ -6,7 +6,7 @@ def is_prime_AKS(n):
     if n == 2 or n == 3:
         return True
 
-    # Проверка, кратно ли число 2 или 3
+    # Проверка на кратность 2 или 3
     if n % 2 == 0 or n % 3 == 0:
         return False
 
@@ -17,7 +17,7 @@ def is_prime_AKS(n):
         d //= 2
 
     # Проверка простоты для нескольких случайных значений a
-    for _ in range(5):  # можно увеличить количество итераций для большей уверенности
+    for _ in range(10):  # Увеличено количество итераций для большей надежности
         a = random.randint(2, n - 2)
         x = pow(a, d, n)
         if x == 1 or x == n - 1:
@@ -28,7 +28,6 @@ def is_prime_AKS(n):
                 break
         else:
             return False
-
     return True
 
 def is_prime_standard(n):
